@@ -72,11 +72,8 @@ p{
         align-items: center;
         margin:0;
     }
-    .card{
-        margin: 0;
-    }
    
-    .cards_item img{
+    .cards_image{
         margin: 0;
         padding:0;
     }
