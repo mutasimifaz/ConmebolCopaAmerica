@@ -64,25 +64,19 @@ p{
 
 
   @media only screen and (max-width:688px){
-    .card{
-        padding: 10px;
-        border-radius: 15px;
-    }
+    
     .cards{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
         margin:0;
         padding: 0;
-        /* flex-direction: column; */
+        
+        
     }
-    .card_image{
-        height: 240px;
-        width: 280px;
-        border-radius: 15px;
-        /* padding: 5px; */
-      }
-      .card_image img{
-          border-radius: 15px;
-      }
+   
+    .cards_item{
+        margin: 0;
+        padding: 15px;
+    }
 }
