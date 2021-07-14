@@ -12,6 +12,13 @@ body{
     display: flex;
     margin-bottom: 50px;
     background-color: #2d25a0;
+    /* overflow: hidden; */
+
+}
+.top-banner img:hover{
+    transform:rotate(360deg);
+    transition: transform 2s ease-in;
+    
 }
 .top-banner img{
     width: 556px;
@@ -67,6 +74,7 @@ p{
     display: flex;
     padding: 20px;
   }
+
   
   .bottom-banner{
     display: flex;
