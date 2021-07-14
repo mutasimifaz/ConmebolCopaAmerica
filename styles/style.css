@@ -1,12 +1,16 @@
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0px auto;
-    background-color:#f1f1f1; ;
+    background-color:#f1f1f1;
+
 }
+
+/******************** top-banner starts********************/
 .half-width{
     width:40%;
-    /* margin-top: 5%; */
+    margin-top: 5%;
     padding-left: 2%;
+    height: 500px;
 }
 .top-banner{
     display: flex;
@@ -45,8 +49,10 @@ p{
     font-size: 12px;
     color: #6C6C6C;
 }
- 
-.card_image  img {
+/*********************** top banner end ****************/
+
+/*********************** player card starts ****************/
+.player_image  img {
     height: 256px;
     width: 300px;
   }
@@ -55,7 +61,7 @@ p{
     margin-left: 200px;
     margin-bottom: 30px;
 } 
-  .cards {
+  .players {
       margin-right: 210px;
       margin-left: 210px;
       justify-content: center;
@@ -65,17 +71,55 @@ p{
       grid-template-columns: 1fr 1fr 1fr;
       grid-row-gap: 30px;
   }
-  .card{
+  .player{
       padding: 15px;
       background-color: #FFFFFF;
       border-radius: 5px;
   }
-  .cards_item {
+  .players_item {
     display: flex;
     padding: 20px;
   }
+  .section-title{
+      text-align: center;
+      color: aquamarine;
+  }
 
-  
+/********************* player cards end ******************/
+/****************** country card starts ****************/
+.countries {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 30px;
+  }
+  .country {
+    display: flex;
+    justify-content: center;
+  }
+  .countries img {
+    width: 56px;
+    height: 56px;
+  }
+  .country-name {
+    /* margin-left: 16px;
+    font-size: 18px; */
+  }
+
+
+
+/****************** country card ends ****************/
+
+/********************* bottom banner starts ******************/
+  .bottom-half-width{
+    width:40%;
+    margin-top: 5%;
+    margin-left: 5%;
+    padding-left: 2%;
+
+  }
+  .text-2 a{
+    text-decoration: none;
+  }
   .bottom-banner{
     display: flex;
 
@@ -85,6 +129,8 @@ p{
     height: 427px;
 
 }
+/********************* bottom banner end ******************/
+/********************* footer starts ******************/
 .logo{
     text-align: center;
 }
@@ -106,7 +152,8 @@ p{
 .copyright{
     text-align: center;
 }
-
+/********************* footer ends ******************/
+/* mediaquery for mobile */
   @media only screen and (max-width:688px){
     .half-width{
         margin: 0;
@@ -128,15 +175,14 @@ p{
         width: 84px;
         height: 22px;
     }
-    .cards{
+    .players{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        justify-content: center;
         margin:0;
         
     }
 
-    .card_image{
+    .player_image{
 
       justify-content: center;
       display: grid;
@@ -153,8 +199,27 @@ p{
        margin-left: 30px;
        margin-bottom: 30px;
    }
+   .container{
+    width:100% ;
+    
+}
+.section-title h3{
+    text-align: center;
+}
+.countries{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.country{
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+}
+.country img{
+    position: absolute;
 
-    .cards_item{
+}
+    .players_item{
         margin: 0;
         padding:0;
     }
@@ -165,8 +230,7 @@ p{
     .bottom-banner img{
         width: 328px;
         height: 248px;
-        /* padding: 0; */
-        margin: 0;
+        /* margin: 0; */
     }
     .text-2{
         text-align: left;
@@ -176,4 +240,43 @@ p{
         height: 63px;
         width: 300px;
     }
+
+}
+/* mediaquery for tablet */
+@media only screen and (min-width:688px) and (max-width:992px){
+    .top-banner{
+        display: flex;
+        margin-bottom: 50px;
+        height: 600px;
+    }
+    .top-banner img{
+        width: 329px;
+        height: 259.17px;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        margin:0;
+        
+    }
+    .bottom-banner img{
+        width: 328px;
+        height: 248px;
+        margin: 0;
+    }
+    .bottom-banner{
+        display: flex;
+    }
+    .container{
+        width: 100%;
+    }
+    .countries{
+    grid-template-columns: repeat(2, 1fr); 
+    
+  }
+  .country img{
+    align-items: center;
+   
+  }
 }
