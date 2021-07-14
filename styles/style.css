@@ -83,10 +83,8 @@ p{
     .card_image{
 
       justify-content: center;
-      /* padding: -30px; */
-      display: flex;
-      margin: 10px;
-      border-radius: 25px;
+      display: grid;
+      margin: 0;
     }
    
     .cards_item{
