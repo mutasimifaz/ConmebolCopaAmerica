@@ -70,13 +70,11 @@ p{
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
         margin:0;
-        padding: 0;
-        
-        
+        padding: 0;        
     }
    
     .cards_item{
         margin: 0;
-        padding: 15px;
+        padding-left:15px;
     }
 }
