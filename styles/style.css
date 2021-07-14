@@ -5,15 +5,13 @@ body{
 }
 .half-width{
     width:40%;
-    margin-top: 5%;
-    margin-left: 5%;
+    /* margin-top: 5%; */
     padding-left: 2%;
 }
 .top-banner{
     display: flex;
     margin-bottom: 50px;
     background-color: #2d25a0;
-    /* height: 600px; */
 }
 .top-banner img{
     width: 556px;
@@ -46,7 +44,10 @@ p{
     width: 300px;
   }
 
-  
+  .text-2{
+    margin-left: 200px;
+    margin-bottom: 30px;
+} 
   .cards {
       margin-right: 210px;
       margin-left: 210px;
@@ -67,7 +68,36 @@ p{
     padding: 20px;
   }
   
+  .bottom-banner{
+    display: flex;
 
+}
+.bottom-banner img{
+    width: 567px;
+    height: 427px;
+
+}
+.logo{
+    text-align: center;
+}
+.logo img{
+    height: 63px;
+    width:300px;
+ 
+}
+.icons .fab{
+    align-items: center;
+    font-size: 32px;
+    margin: 0 10px;
+    color: #cbcbcb;
+    
+}
+.icons{
+    text-align: center; 
+}
+.copyright{
+    text-align: center;
+}
 
   @media only screen and (max-width:688px){
     .half-width{
@@ -78,9 +108,9 @@ p{
         display: grid;
         grid-template-rows: repeat(1,1fr);
     }
-    .half-width img{
-        height: 219px;
-        width: 278px;
+    .top-banner img{
+        width: 329px;
+        height: 259.17px;
     }
     .link-btn{
         background-color: #E02C6D;
@@ -97,11 +127,13 @@ p{
         margin:0;
         
     }
+
     .card_image{
 
       justify-content: center;
       display: grid;
       margin: 0;
+      padding: 0;
     }
     .top-banner h1{
         color: #ffffff;
@@ -109,11 +141,31 @@ p{
         font-size: 36px;
         line-height: 80px;
     }
-   .text{
+   .text-1{
        margin-left: 30px;
+       margin-bottom: 30px;
    }
+
     .cards_item{
         margin: 0;
         padding:0;
+    }
+    .bottom-banner{
+        display: grid;
+        grid-template-rows: repeat(1,1fr);
+    }
+    .bottom-banner img{
+        width: 328px;
+        height: 248px;
+        /* padding: 0; */
+        margin: 0;
+    }
+    .text-2{
+        text-align: left;
+        margin-left: 30px;
+    }
+    .logo img{
+        height: 63px;
+        width: 300px;
     }
 }
